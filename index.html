@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/3038f3bd83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/pot.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hey, I'm <span>Pallavi</span><br>Gadegone<br></h1><br>
+                
+                <p>Software developer,</p>
+                <p>Application developer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src = "images/a.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h3>Aspiring software developer with a passion for creating
+                        elegant and efficient solutions. Excited to contribute my
+                        knowledge to real-world projects. Strong problem-solving
+                        skills and ability to work effectively in a team-based
+                        environment. Seeking an entry- level position to apply my
+                        skills, work collaboratively with experienced teams, and
+                        continue to grow as a software developer.</h3>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('education')">Eduacation</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>JAVA</li><br>
+                            <li>Python</li><br>
+                            <li>Android Application Development</li><br>
+                            <li>HTML</li><br>
+                            <li>CSS</li>
+
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MCA from SP Pune University</li><br>
+                            <li><span>2021</span><br>BSc from RTM Nagpur University</li><br>
+                            <li><span>2018</span><br>HSC Board</li><br>
+                            <li><span>2016</span><br>SSC Board</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="education"> 
+         <!-- <div class="Container">  -->
+            <h1 class="sub-titl">Education</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="year">
+                        2021 - 2023<br><br>Master's Degree
+                    </div>
+                    <div class="animate-text">
+                        <h2>Master of Computer Application</h2><br>
+                        <p>I've completed my Master Degree from Institute of Industrial and Computer Management and Research, Pune.</p>
+                        <p>- with 70%</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="year">
+                        2018 - 2021<br><br>Bachelor's Degree
+                    </div>
+                    <div class="animate-text">
+                        <h2>Bachelor of Computer Science</h2><br>
+                        <p>I've completed my Bachelor Degree in Computer Science from New Arts Commerce and Science College, Wardha.</p>
+                        <p>- with 63%</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="year">
+                        2016 - 2018<br><br>HSC Board
+                    </div>
+                    <div class="animate-text">
+                        <h2>Higher Secondary School</h2><br>
+                        <p>I've completed my Junior College education from J.B. College of Science, Wardha.</p>
+                        <p>- with 64%</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="year">
+                        2015 - 2016<br><br>SSC Board
+                    </div>
+                    <div class="animate-text">
+                        <h2>Secondary School</h2><br>
+                        <p>I've completed my State Board education from Sushil Himatsingka Vidyalaya, Wardha.</p>
+                        <p>- with 83%</p>
+                    </div>
+                </div>
+            </div>
+            
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI Design</h2>
+                <p>UI design focuses on creating visually appealing and user-friendly interfaces. 
+                It involves crafting intuitive layouts, selecting color schemes, 
+                typography, and interactive elements to enhance user engagement. 
+                The goal is to ensure users can navigate and interact with the product easily and efficiently.</p>
+                <!-- <a href="https://www.wix.com/blog/web-design">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>Web development involves building and maintaining the websites. 
+                    The process covers front-end development (user interface) and back-end development 
+                    (server-side logic and databases). The goal is to create efficient, reliable, 
+                    and user-friendly digital solutions that meet specific needs and provide a seamless experience.</p>
+                <!-- <a href="https://www.wix.com/blog/web-design">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Application development involves designing, creating, and maintaining 
+                    software applications for various devices. It encompasses coding, 
+                    interface design, testing, and debugging to ensure functionality and performance. 
+                    The aim is to build reliable, efficient, and user-friendly applications 
+                    that meet specific user needs.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pg.jpg">
+                    <div class="layer">
+                        <h3>Farmers online shop (Web application)</h3>
+                        <p>The proposed system aims to connect farmers and
+                            customers where farmers can directly sell their products to
+                            the customers without interference from the mediators.<br><br>
+                            Tech: HTML, CSS, JavaScript, JAVA & MySQL
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ab.jpg">
+                    <div class="layer">
+                        <h3>Uttarakhand Tourism (Web application)</h3>
+                        <p>The system facilitate offline customers online, people
+                            unaware of famous tourist places. Can visit this website to
+                            explore and plan their tours with hotel and homestay
+                            facilities.<br><br> Tech: HTML, CSS, JavaScript, Php & MySQL
+                            
+                        </p>
+                        <a href="https://github.com/pallavigadegone/PHP-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Toy World (Mobile application)</h3>
+                        <p>The application is similar to the olx Application concept. where
+                            users can get second-hand toys according to their location
+                            without spending a penny. One user can perform both
+                            operation like uploading the toy and receiving it. <br><br>
+                            Tech: XML, Java, Firebase
+                        </p>
+                        <a href="https://github.com/pallavigadegone/Android_Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/pallavigadegone" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pallavigadegone7194@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i>9975703784</p> -->
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/pallavi-gadegone-884725251/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/pallavigadegone"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Pallavi Gadegone.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Pallavi.</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7u8sc6_QaOe0A6NORKzzE3NBqZSjbJMN5UKUq1-Ls2BHBRElY8wbvsjdCICiCRCUSoA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

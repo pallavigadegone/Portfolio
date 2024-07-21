@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+.container { 
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.sub-titl {
+    margin-bottom: 10px;
+    margin-left: 11%;
+    font-size: 60px;
+    color: #0a0909;
+}
+
+/* Card styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #fefefe;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the animation stays within the card */
+    position: relative; /* Required for absolute positioning of animated text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 95%; /* Adjust the width to make the card slightly narrower */
+    margin: 20px auto; /* Center the card horizontally */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .year {
+    background-color: #d8688c;
+    color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    flex: 0 0 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.animate-text {
+    padding: 20px;
+    flex: 1;
+    position: relative; /* Required for absolute positioning of animated text */
+    overflow: hidden; /* Ensure the animation stays within the text container */
+}
+
+.animate-text h2,
+.animate-text p,
+.animate-text h5 {
+    margin: 0;
+    font-size: 24px;
+    opacity: 0; /* Initial state for the animation */
+    transform: translateX(100%); /* Start position for the animation */
+    animation: slide-in-left 1s ease-in-out forwards; /* Define the animation with smoother easing */
+}
+
+.animate-text p, 
+.animate-text h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    animation-delay: 0.3s; /* Delay for subsequent elements */
+}
+
+/* Animation */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        height: 170px;
+    }
+
+    .card .year {
+        flex: 0 0 200px;
+        padding: 40px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .animate-text h2,
+    .animate-text p,
+    .animate-text h5 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sub-titl {
+        font-size: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .animate-text h2,
+    .animate-text p,
+    .animate-text h5 {
+        font-size: 18px;
+    }
+}
